@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="styleseet" href="style.css">
-  <title>ロゴメーカー</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空想ロゴメーカー</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  <div id="header">トップ</div>
-  <p>aa</p>
+    <div id="header">
+    <div id="logo">
+        <svg></svg>
+	</div>
+    </div>
+    </div>
+    <div id="area">
+        <svg viewBox="0 0 120 120">
+            <path fill="#00c080" d="M -2.7,-1.9 H 123 V 122 H -2.7 Z"></path>
+            <path fill="#80ffc0" d="m -8,82 c 0,0 10,-9 24,-9 14,0 42,15 42,15 0,0 24,15 39,15 C 112,103 130,91 130,91 l 0,14 c 0,0 -21,9 -33,9 -12,0 -38,-12 -38,-12 0,0 -33,-18 -44,-18 -12,0 -23,10 -23,10 z"></path>
+            <text textLength="90%" lengthAdjust="spacingAndGlyphs" x="59" y="55" class="text" id="ku">空想</text>
+            <text textLength="90%" lengthAdjust="spacingAndGlyphs" x="59" y="108" class="text" id="bun">文章</text>
+        </svg>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap');.text{fill :#ffffff; font-family: 'ヒラギノ角ゴ ProN','モリサワ新ゴ','Noto Sans JP';letter-spacing:-0.05em;font-size:350%;text-anchor:middle;user-select:none;}
+        </style>
+    </div>
+    <div id="edit">
+        <form>
+            <label for="letter">文字：</label>
+            <input type="text" placeholder="文章" id="letter">
+        </form>
+    </div>
+    <script type="text/javascript" src='logomake.js'></script>
 </body>
 </html>
